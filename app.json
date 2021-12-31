@@ -1,0 +1,65 @@
+{
+    "name": "Music Player",
+    "description": "A Telegram Music Bot written in Python using Pyrogram and Py-Tgcalls",
+    "repository": "https://github.com/marrk85/IronMusicPlayer",
+    "logo": "https://github.com/marrk85/IronMusicPlayer/raw/main/theme/logo.png",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "voicechat",
+      "userbot",
+      "music",
+      "player",
+      "python",
+      "pyrogram",
+      "py-tgcalls",
+      "musicplayer"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Telegram API_ID, get it from https://my.telegram.org/apps",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Telegram API_HASH, get it from https://my.telegram.org/apps",
+        "required": true
+      },
+      "SESSION": {
+        "description": "Pyrogram String Session, get it from https://telegram.me/MarrkStringBot",
+        "required": true
+      },
+      "SUDOERS": {
+        "description": "ID of sudo users who have special access (Separate with space if more than one)",
+        "required": false
+      },
+      "PREFIX": {
+        "description": "Bot commad prefix or handler (separate multiple prefix with space)",
+        "value": "!",
+        "required": false
+      },
+      "LANGUAGE": {
+        "description": "An available bot language (read the README.md for more info)",
+        "value": "en",
+        "required": false
+      },
+      "CUSTOM_QUALITY": {
+        "description": "An available stream quality (read the README.md for more info)",
+        "value": "high",
+        "required": false
+      }
+    },
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      },
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }
