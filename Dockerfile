@@ -5,8 +5,8 @@ RUN apt install git curl python3-pip ffmpeg -y
 
 RUN cd /
 RUN git clone https://github.com/marrk85/IronMusicPlayer
-RUN cd MusicPlayer
-WORKDIR /MusicPlayer
+RUN cd IronMusicPlayer
+WORKDIR /IronMusicPlayer
 
 RUN pip3 install --upgrade pip
 RUN pip3 install -U -r requirements.txt
