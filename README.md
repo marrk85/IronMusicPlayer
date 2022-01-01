@@ -46,7 +46,7 @@ Allows you to stream different things in multiple chats simultaneously. Each cha
 
 ### 🗣 Speaks Different Languages
 
-Anonymous Music Player is multilingual and speaks [various languages](#languages),
+Iron Music Player is multilingual and speaks [various languages](#languages),
 Thanks to the Translators.
 
 ## 🚀 <a name="deploy"></a>Deploy
@@ -57,7 +57,7 @@ Thanks to the Translators.
 
 ```bash
 $ git clone https://github.com/marrk85/IronMusicPlayer
-$ cd MusicPlayer
+$ cd IronMusicPlayer
 $ cp sample.env .env
 < edit .env with your own values >
 $ sudo docker build . -t musicplayer
